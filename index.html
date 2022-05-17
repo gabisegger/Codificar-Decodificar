@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passinho do Romano</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Criptografia</h1>
+    </header>
+    <main>
+        <p class="description"></p>
+        <form action="" class="container">
+            <div class="select">
+                <label for="selectCode">Escolha uma opção:</label>
+                <select name="Code type" id="selectCode">
+                  <option value="select">Escolha uma opção</option>
+                  <option value="cesar">Cifra de César</option>
+                  <option value="base64">Base64</option>
+                </select>
+            </div>
+
+            <div class="options">
+                <input id="radiocode" type="radio" name="code" value="code" />
+                <label>Codificar</label>
+                <input id="radiodecode" type="radio" name="code" value="decode" />
+                <label>Decodificar</label>
+            </div>
+    
+            <div class="digita-mensagem">
+                <label for="text">Digite sua mensagem:</label>
+                <textarea id="text" cols="30" rows="10" placeholder="Digite sua mensagem:"></textarea>
+            </div>
+
+            <div class="resultado-codigo">
+                <label for="result">Resultado:</label>
+                <textarea id="result" cols="30" rows="10" placeholder="Resultado:" readonly></textarea>
+            </div>
+            
+            <button id="btn"></button>
+        </form>
+    </main>
+    <footer>
+        <p>Copyright © 2022 Projeto para fins educacionais - Por Gabriela Segger Caruso - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
