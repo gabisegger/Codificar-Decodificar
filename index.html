@@ -28,6 +28,14 @@
                 <input id="radiodecode" type="radio" name="code" value="decode" />
                 <label>Decodificar</label>
             </div>
+
+            <div id="steps" style="display: none">
+                <label class="textsteps">Selecione o número de passos:</label>
+                <div class=" selectsteps">
+                  <input type="range" id="passos" min="2" max="25" value="5" oninput="this.nextElementSibling.value = this.value" />
+                  <output>5</output>
+                </div>
+            </div>
     
             <div class="digita-mensagem">
                 <label for="text">Digite sua mensagem:</label>
