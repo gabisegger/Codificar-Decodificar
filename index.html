@@ -12,43 +12,43 @@
     </header>
     <main>
         <p class="description"></p>
-        <form action="" class="container">
-            <div class="select">
-                <label for="selectCode">Escolha uma opção:</label>
-                <select name="Code type" id="selectCode">
-                  <option value="select">Escolha uma opção</option>
-                  <option value="cesar">Cifra de César</option>
-                  <option value="base64">Base64</option>
-                </select>
-            </div>
+    <form>
+        <div class="select">
+            <label for="selectCode">Escolha uma opção:</label>
+            <select name="Code type" id="selectCode">
+                <option value="select">Escolha uma opção</option>
+                <option value="cesar">Cifra de César</option>
+                <option value="base64">Base64</option>
+            </select>
+        </div>
 
-            <div class="options">
-                <input id="radiocode" type="radio" name="code" value="code" />
-                <label>Codificar</label>
-                <input id="radiodecode" type="radio" name="code" value="decode" />
-                <label>Decodificar</label>
-            </div>
+        <div class="options">
+            <input id="radiocode" type="radio" name="code" value="code" />
+            <label>Codificar</label>
+            <input id="radiodecode" type="radio" name="code" value="decode" />
+            <label>Decodificar</label>
+        </div>
 
-            <div id="steps" style="display: none">
-                <label class="textsteps">Selecione o número de passos:</label>
-                <div class=" selectsteps">
-                  <input type="range" id="passos" min="2" max="25" value="5" oninput="this.nextElementSibling.value = this.value" />
-                  <output>5</output>
-                </div>
+        <div id="steps" style="display: none">
+            <label class="textsteps">Selecione o número de passos:</label>
+            <div class=" selectsteps">
+                <input type="range" id="passos" min="2" max="25" value="5" oninput="this.nextElementSibling.value = this.value" />
+                <output>5</output>
             </div>
-    
-            <div class="digita-mensagem">
-                <label for="text">Digite sua mensagem:</label>
-                <textarea id="text" cols="30" rows="10" placeholder="Digite sua mensagem:"></textarea>
-            </div>
+        </div>
 
-            <div class="resultado-codigo">
-                <label for="result">Resultado:</label>
-                <textarea id="result" cols="30" rows="10" placeholder="Resultado:" readonly></textarea>
-            </div>
-            
-            <button id="btn">Codificar</button>
-        </form>
+        <div class="type-message">
+            <label for="text">Digite sua mensagem:</label>
+            <textarea id="text" cols="30" rows="10" placeholder="Digite sua mensagem:"></textarea>
+        </div>
+
+        <div class="result-code">
+            <label for="result">Resultado:</label>
+            <textarea id="result" cols="30" rows="10" placeholder="Resultado:" readonly></textarea>
+        </div>
+        
+        <button id="btn">Codificar</button>
+    </form>
     </main>
     <footer>
         <p>Copyright © 2022 Projeto para fins educacionais - Por Gabriela Segger Caruso - Todos os direitos reservados</p>
