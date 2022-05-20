@@ -1,0 +1,94 @@
+*{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+
+body{
+    
+    background: url(./img/code.jpg);
+    background-size: cover;
+}
+
+.container{
+    min-height: calc(100vh - 55px);
+    display: grid;
+    justify-content: center;
+    padding: 30px 0 10px;
+    box-sizing: border-box;
+}
+
+.title{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+#text, #result, #selectCode{
+    background: rgba(0,0,0,.8);
+    padding: 15px 10px;
+    border-radius: 10px;
+    color: green;
+    border: 1px solid;
+}
+
+#steps{
+    justify-items: center;
+}
+
+#text::placeholder{
+    color: green;
+}
+
+#result::placeholder{
+    color: green;
+}
+
+.select, .type-message, .result-code{
+    display: grid;
+}
+
+.select, .add, .type-message, .result-code{
+    padding-bottom: 19px;
+}
+
+.select{
+    justify-content: center;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    grid-gap: 10px;
+}
+
+.btnCode{
+    display: flex;
+    justify-content: center;
+}                       
+
+#btn{
+    background: green;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+
+#btn:hover{
+    border: 2px solid white;
+}
+
+.copyright{
+    font-size: 9px;
+    text-align: center;
+    padding: 10px;
+}

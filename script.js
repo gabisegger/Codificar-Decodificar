@@ -19,7 +19,7 @@ const steps = document.getElementById('steps')
 selectCode.addEventListener('click', () => {
 
   if(selectCode.value == 'cesar'){
-    steps.style.display = "flex";
+    steps.style.display = "grid";
     steps.classList.add('add')
   }else {
     steps.style.display = "none";

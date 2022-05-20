@@ -4,54 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Passinho do Romano</title>
 </head>
 <body>
-    <header>
-        <h1 class="titulo">Criptografia</h1>
-    </header>
     <main>
-        <p class="description"></p>
-    <form>
-        <div class="select">
-            <label for="selectCode">Escolha uma opção:</label>
-            <select name="Code type" id="selectCode">
-                <option value="select">Escolha uma opção</option>
-                <option value="cesar">Cifra de César</option>
-                <option value="base64">Base64</option>
-            </select>
-        </div>
+        <div class="container">
+            <h1 class="title">Codificador</h1>
+            <form>
+                <div class="select">
+                    <label for="selectCode">Escolha uma opção:</label>
+                    <select name="Code type" id="selectCode">
+                        <option value="select">Escolha uma opção</option>
+                        <option value="cesar">Cifra de César</option>
+                        <option value="base64">Base64</option>
+                    </select>
+                </div>
 
-        <div class="options">
-            <input id="radiocode" type="radio" name="code" value="code" />
-            <label>Codificar</label>
-            <input id="radiodecode" type="radio" name="code" value="decode" />
-            <label>Decodificar</label>
-        </div>
+                <div class="options">
+                    <input checked="checked" id="radiocode" type="radio" name="code" value="code" />
+                    <label>Codificar</label>
+                    <input id="radiodecode" type="radio" name="code" value="decode" />
+                    <label>Decodificar</label>
+                </div>
 
-        <div id="steps" style="display: none">
-            <label class="textsteps">Selecione o número de passos:</label>
-            <div class=" selectsteps">
-                <input type="range" id="passos" min="2" max="25" value="5" oninput="this.nextElementSibling.value = this.value" />
-                <output>5</output>
-            </div>
-        </div>
+                <div id="steps" style="display: none">
+                    <label class="textsteps">Selecione o número de passos:</label>
+                    <div class=" selectsteps">
+                        <input type="range" id="passos" min="2" max="25" value="5" oninput="this.nextElementSibling.value = this.value" />
+                        <output>5</output>
+                    </div>
+                </div>
 
-        <div class="type-message">
-            <label for="text">Digite sua mensagem:</label>
-            <textarea id="text" cols="30" rows="10" placeholder="Digite sua mensagem:"></textarea>
-        </div>
+                <div class="type-message">
+                    <textarea id="text" cols="30" rows="10" placeholder="Digite sua mensagem aqui..."></textarea>
+                </div>
 
-        <div class="result-code">
-            <label for="result">Resultado:</label>
-            <textarea id="result" cols="30" rows="10" placeholder="Resultado:" readonly></textarea>
+                <div class="result-code">
+                    <textarea id="result" cols="30" rows="10" placeholder="Seu resultado aqui..." readonly></textarea>
+                </div>
+                <div class="btnCode">
+                    <button id="btn">Codificar</button>
+                </div>
+            </form>
         </div>
-        
-        <button id="btn">Codificar</button>
-    </form>
     </main>
     <footer>
-        <p>Copyright © 2022 Projeto para fins educacionais - Por Gabriela Segger Caruso - Todos os direitos reservados</p>
+        <p class="copyright">Copyright © 2022 Projeto para fins educacionais - Por Gabriela Segger Caruso - Todos os direitos reservados</p>
         <script src="./script.js"></script>
     </footer>
 </body>
